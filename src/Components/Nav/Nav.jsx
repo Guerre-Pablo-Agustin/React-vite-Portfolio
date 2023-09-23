@@ -28,7 +28,7 @@ const Nav = () => {
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#contacto">Contact</a>
         <button onClick={() => setShowMenu(!showMenu)} className="xl:hidden text-4xl">
         {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
         </button>
