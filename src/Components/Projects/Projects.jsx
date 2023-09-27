@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <section id="projects" className="min-h-[90vh] grid grid-cols-1 md:-mt-20">
       <div className="bg-primary flex justify-center items-center mt-2">
-        <h1 className="text-white italic max-[600px]:mt-10 text-5xl mt-10">
+        <h1 className="text-white underline decoration-white decoration-4  italic max-[600px]:mt-10 text-5xl mt-10">
           Mis proyectos
         </h1>
       </div>

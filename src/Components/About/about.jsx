@@ -9,7 +9,7 @@ const About = () => {
     <section id="about" className="min-h-[90vh] grid grid-cols-1 md:-mt-20 ">
       {/*Informacion sobre mi*/}
       <div className="bg-primary flex justify-center items-center mt-2">
-      <h1 className="text-white italic sm-[600px]:mt-10  text-5xl mt-10">Sobre mi</h1>
+      <h1 className="text-white italic sm-[600px]:mt-10  text-5xl mt-10 underline decoration-white decoration-4">Sobre mi</h1>
      </div>
 
      <div className="bg-primary grid italic grid-cols-1 md:grid-cols-3  gap-4 p-10 

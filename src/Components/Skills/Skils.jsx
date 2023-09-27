@@ -16,6 +16,9 @@ import {
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 
+//img
+import imagen from "./img/habilidades.avif";
+
 const Skills = () => {
   const [activeTab, setActiveTab] = useState("database"); // Estado para controlar la pestaña activa
 
@@ -24,16 +27,25 @@ const Skills = () => {
   };
 
   return (
-    <section
-      id="skills"
-      className="min-h-[90vh] mt-10 max-[700px]:m-8"
-    >
-      <div className="flex justify-center items-center mb-5 sm:m-3">
-        <h1 className=" text-primary italic text-5xl max-[600px]:text-3xl sm:text-3xl mt-10 md:max-w-[600px] md:mt-10">
+    <section id="skills" className="min-h-[90vh] mt-10 max-[700px]:m-8">
+       <div className="">
+        <h1 className="underline decoration-primary decoration-4 flex justify-center text-center italic text-5xl max-[600px]:text-3xl max-[500px]:mt-10 sm:text-3xl mb-4 -mt-10 md:max-w-[600px] md:mt-10">
           Mis Conocimientos
         </h1>
       </div>
-      <div className="sm:text-1xl sm:m-2 flex justify-center items-center mb-4 flex-row gap-10 ">
+      <div className="flex items-center justify-center flex-row ms:flex-col ">
+      <div className="md:col-span-5 flex items-center justify-center">
+          <img
+            src={imagen}
+            className="w-[70%]  shadow-xl shadow-prymary"
+            alt="imagen"
+          />
+      </div>
+     
+      <div className="flex justify-center items-center  flex-col  shadow-xl 
+                      shadow-prymary p-20 m-5 -mt-10 max-[300px]:-m-10 ">
+     
+      <div className=" max-[700px]:-mt-10 -mt-20 sm:text-1xl sm:m-2 flex justify-center items-center mb-4 flex-row gap-10 ">
         <button
           className={`  mr-4 py-2 px-4 rounded uppercase ${
             activeTab === "database"
@@ -55,6 +67,7 @@ const Skills = () => {
           Desarrollo
         </button>
       </div>
+     
 
       {activeTab === "database" && (
         <div className="flex flex-wrap items-center justify-center mt-5 gap-10 mb-10 text-2xl">
@@ -113,6 +126,8 @@ const Skills = () => {
           </div>
         </div>
       )}
+       </div>
+       </div>
     </section>
   );
 };

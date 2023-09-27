@@ -26,12 +26,12 @@ const Contacto = () => {
   };
 
   return (
-    <section id="contacto" className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+    <section id="contacto" className="mx-auto grid grid-cols-1 md:grid-cols-2 ">
       {/* Imagen */}
-      <div className="md:col-span-1 max-[600px]:m-5">
-        <h2 className="text-2xl font-bold m-8">Formulario de Contacto</h2>
-        <div className="mb-4">
-          <img src={formulario} alt="" />
+      <div className="md:col-span-1 max-[600px]:m-5 -mr-20">
+        <h2 className="text-2xl font-bold m-8 flex items-center justify-center underline decoration-primary decoration-4 ">Formulario de Contacto</h2>
+        <div className="mb-4 flex items-center justify-center">
+          <img className="w-[70%] shadow-xl shadow-prymary" src={formulario} alt="" />
         </div>
       </div>
 
