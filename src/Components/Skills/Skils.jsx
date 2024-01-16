@@ -27,8 +27,8 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="min-h-[90vh] mt-10 max-[700px]:m-8">
-      <div className="flex items-center text-center flex-col -mt-10">
+    <section id="skills" className="min-h-[90vh] max-[700px]:m-8 min-[1100px]:flex-col">
+      <div className="flex items-center text-center flex-col ">
         <h1
           className="underline decoration-primary decoration-4 
         flex justify-center text-center italic text-5xl 
@@ -38,20 +38,22 @@ const Skills = () => {
           Mis Conocimientos
         </h1>
       </div>
-      <div className="flex items-center justify-center flex-row ms:flex-col ">
-        <div className="w-[50%] md:col-span-5 flex items-center justify-center ">
-          <img
-            src={imagen}
-            className="w-[70%]  shadow-xl shadow-prymary mb-20"
-            alt="imagen"
-          />
+      <div className="flex-grow w-full ms:bg-primary flex items-center justify-center flex-row max-[900px]:flex-col">
+        {/*Imagen*/}
+        <div className="flex items-center justify-center ms:w-full w[40%]">
+        <img
+          src={imagen}
+          className="shadow-xl shadow-prymary min-[1300px]:ml-10"
+          alt="imagen"
+          style={{ width: "500px", height: "400px" }}
+        />
         </div>
-
+        {/*Habilidades*/}
         <div
-          className="flex justify-center items-center  flex-col  shadow-xl 
-                      shadow-prymary p-20 m-5 -mt-10 max-[300px]:-m-10 -ml-20"
+          className="flex justify-center items-center w-full flex-col  shadow-xl 
+                      shadow-prymary  m-5 mt-10 text-2xl"
         >
-          <div className=" max-[700px]:-mt-10 -mt-20 sm:text-1xl sm:m-2 flex justify-center items-center mb-4 flex-row gap-10 ">
+          <div className="  sm:text-1xl sm:m-2 flex justify-center items-center mb-4 flex-row gap-10 ">
             <button
               className={`  mr-4 py-2 px-4 rounded uppercase ${
                 activeTab === "database"

@@ -6,21 +6,21 @@ import programador from "./img/programador.jpg";
 
 const About = () => {
   return (
-    <section id="about" className="min-h-[90vh] grid grid-cols-1 md:-mt-20 ">
+    <section id="about" className="min-h-[90vh] grid grid-cols-1 md:-mt-20 max-[900px]:grid-cols-1">
       {/*Informacion sobre mi*/}
       <div className="bg-primary flex justify-center items-center mt-2">
       <h1 className="text-white italic sm-[600px]:mt-10  text-5xl mt-10 underline decoration-white decoration-4">Sobre mi</h1>
      </div>
 
      <div className="bg-primary grid italic grid-cols-1 md:grid-cols-3  gap-4 p-10 
-                     max-[600px]:p-4 ">
+                     max-[900px]:p-4 max-[900px]:grid-cols-1">
       {/*Analista*/}
       <div className="cursor-pointer md:col-span-1 bg-white max-w-2xl 
                       mx-auto py-4 px-6 rounded-lg shadow-xl 
                       min-[1300px]:hover:scale-110 transition-all duration-500
                       max-[600px]:m-2">
         <div className="flex items-center justify-center mb-4">
-          <span className="bg-primary text-white py-2 px-4 text-3xl rounded uppercase">
+          <span className="bg-primary text-white py-2 px-4 text-lg rounded uppercase">
             Analista
           </span>
         </div>
@@ -47,7 +47,7 @@ const About = () => {
                       min-[1300px]:hover:scale-110 transition-all duration-500
                       max-[600px]:m-2">
         <div className="flex items-center justify-center mb-4">
-          <span className="bg-primary text-white py-2 px-4 text-3xl rounded uppercase">
+          <span className="bg-primary text-white py-2 px-4 text-lg rounded uppercase">
             Programador
           </span>
         </div>
@@ -73,7 +73,7 @@ const About = () => {
                       min-[1300px]:hover:scale-110 transition-all duration-500
                       max-[600px]:m-2 max-[600px]:-p-4">
         <div className="flex items-center justify-center mb-4">
-          <span className="bg-primary text-white py-2 px-4 text-3xl rounded uppercase">
+          <span className="bg-primary text-white py-2 px-4 text-lg rounded uppercase">
             Desarrollador Web
           </span>
         </div>
