@@ -43,13 +43,13 @@ const Projects = () => {
         <div className='flex gap-4 -mt-10' >
         <div className='mt-10 flex'>
                 <a href="https://github.com/Guerre-Pablo-Agustin/Pokedex" target="_blank" className='bg-primary px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md animate-bounce'>
+                text-white mt-2 flex gap-2 shadow-md '>
                     <AiFillGithub className='text-3xl' />
                 </a>
         </div>
         <div className='mt-10 flex'>
                 <a href="https://app-pokedex-gap.netlify.app" target="_blank" className='bg-primary px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md animate-bounce'>
+                text-white mt-2 flex gap-2 shadow-md '>
                     <AiOutlineLink className='text-3xl' />
                 </a>
         </div>
@@ -81,13 +81,13 @@ const Projects = () => {
         <div className='flex gap-4 -mt-10' >
         <div className='mt-10 flex'>
                 <a href="https://github.com/Guerre-Pablo-Agustin/Clima" target="_blank" className='bg-primary px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md animate-bounce'>
+                text-white mt-2 flex gap-2 shadow-md '>
                     <AiFillGithub className='text-3xl' />
                 </a>
         </div>
         <div className='mt-10 flex'>
                 <a href="https://app-clima-gpa.netlify.app" target="_blank" className='bg-primary px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md animate-bounce'>
+                text-white mt-2 flex gap-2 shadow-md '>
                     <AiOutlineLink className='text-3xl' />
                 </a>
         </div>

@@ -13,6 +13,8 @@ import {
   SiMicrosoftsqlserver,
   SiVite,
   SiCsharp,
+  SiNextdotjs,
+  SiTailwindcss,
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 
@@ -27,7 +29,10 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="min-h-[90vh] max-[700px]:m-8 min-[1100px]:flex-col">
+    <section
+      id="skills"
+      className="min-h-[90vh] max-[700px]:m-8 min-[1100px]:flex-col"
+    >
       <div className="flex items-center text-center flex-col ">
         <h1
           className="underline decoration-primary decoration-4 
@@ -38,90 +43,46 @@ const Skills = () => {
           Mis Conocimientos
         </h1>
       </div>
-      <div className="flex-grow w-full ms:bg-primary flex items-center justify-center flex-row max-[900px]:flex-col">
+      <div className=" flex-grow flex items-center justify-center flex-row max-[900px]:flex-col">
         {/*Imagen*/}
-        <div className="flex items-center justify-center ms:w-full w[40%]">
-        <img
-          src={imagen}
-          className="shadow-xl shadow-prymary min-[1300px]:ml-10"
-          alt="imagen"
-          style={{ width: "500px", height: "400px" }}
-        />
+        <div className="m-8 flex  h-[40%] items-center justify-center ms:w-full w-[40%]">
+          <img
+            src={imagen}
+            className="shadow-xl min-[400px]:w[80%] shadow-prymary min-[1300px]:ml-10"
+            alt="imagen"
+            style={{ width: "500px", height: "400px" }}
+          />
         </div>
         {/*Habilidades*/}
-        <div
-          className="flex justify-center items-center w-full flex-col  shadow-xl 
-                      shadow-prymary  m-5 mt-10 text-2xl"
-        >
-          <div className="  sm:text-1xl sm:m-2 flex justify-center items-center mb-4 flex-row gap-10 ">
-            <button
-              className={`  mr-4 py-2 px-4 rounded uppercase ${
-                activeTab === "database"
-                  ? "bg-primary text-white"
-                  : "bg-gray-200 text-gray-600"
-              }`}
-              onClick={() => handleTabClick("database")}
-            >
-              Motores de base de datos
-            </button>
-            <button
-              className={`  py-2 px-4 rounded uppercase ${
-                activeTab === "development"
-                  ? "bg-primary text-white"
-                  : "bg-gray-200 text-gray-600"
-              }`}
-              onClick={() => handleTabClick("development")}
-            >
-              Desarrollo
-            </button>
+        <div className="flex flex-col items-center w-full w-[40%]  shadow-xl m-8 text-xl italic">
+          <div className="flex flex-row gap-8 text-lg">
+            <p className="text-center">Motores de bases de datos</p>
+            <div className="flex justify-center gap-4 w-full md:w-[80%] mx-auto">
+              <BiLogoMongodb className="text-5xl text-green-400" />
+              <SiMysql className="text-5xl text-orange-400" />
+              <BiLogoPostgresql className="text-5xl text-blue-400" />
+              <SiMicrosoftsqlserver className="text-5xl text-red-400" />
+            </div>
           </div>
-
-          {activeTab === "database" && (
-            <div className="flex flex-wrap items-center justify-center mt-5 gap-10 mb-10 text-2xl">
-              <div className="sm:m-5 max-[600px]:gap-10 w-full md:w-[80%] gap-3 grid grid-cols-2 md:grid-cols-4">
-                <div>
-                  <BiLogoMongodb className="text-7xl text-green-400" />
-                </div>
-                <div>
-                  <SiMysql className="text-7xl text-orange-400" />
-                </div>
-                <div>
-                  <BiLogoPostgresql className="text-7xl text-blue-400" />
-                </div>
-                <div className="">
-                  <SiMicrosoftsqlserver className="text-7xl text-red-400 " />
-                </div>
-              </div>
+          <br />
+          <div className="flex flex-row  text-lg">
+            <p className="text-center">Herramientas de desarrollo</p>
+            <div className="flex justify-center gap-4 w-full md:w-[80%] mx-auto">
+              <BiLogoHtml5 className="text-5xl text-orange-600" />
+              <IoLogoJavascript className="text-5xl text-yellow-400" />
+              <SiVite className="text-5xl text-violet-600" />
+              <BiLogoWordpress className="text-5xl text-violet-600" />
+              <SiNextdotjs className="text-5xl text-black" />
             </div>
-          )}
-
-          {activeTab === "development" && (
-            <div className="flex flex-wrap items-center justify-center mt-5 mb-10 italic text-2xl">
-              <div className="w-full md:w-[80%] grid grid-cols-2 md:grid-cols-4 gap-3">
-                <div className="flex items-center justify-center gap-2 mb-4 sm:mb-0">
-                  <BiLogoHtml5 className="text-7xl text-orange-600" />
-                </div>
-                <div className="flex items-center justify-center gap-2 mb-4 sm:mb-0">
-                  <BiLogoCss3 className="text-7xl text-blue-700" />
-                </div>
-                <div className="flex items-center justify-center gap-2 mb-4 sm:mb-0">
-                  <BiLogoPhp className="text-7xl text-red-600" />
-                </div>
-                <div className="flex items-center justify-center gap-2 mb-4 sm:mb-0">
-                  <IoLogoJavascript className="text-7xl text-yellow-300" />
-                </div>
-                <div className="flex items-center justify-center gap-2 mb-4 sm:mb-0">
-                  <SiVite className="text-7xl text-violet-600" />
-                </div>
-                <div className="flex items-center justify-center gap-2 mb-4 sm:mb-0">
-                  <SiCsharp className="text-7xl text-violet-600" />
-                </div>
-                <div className="flex items-center justify-center gap-2 mb-4 sm:mb-0">
-                  <BiLogoWordpress className="text-7xl text-violet-600" />
-                </div>
-              </div>
+          </div>
+          <br />
+          <div className="flex flex-row gap-10 text-lg">
+            <p className="text-left -ml-40">Herramientas de CSS</p>
+            <div className="flex justify-center gap-4 w-full md:w-[80%] mx-auto">
+              <BiLogoCss3 className="text-5xl text-blue-700" />
+              <SiTailwindcss className="text-5xl text-blue-500" />
             </div>
-          )}
+          </div>
         </div>
       </div>
     </section>

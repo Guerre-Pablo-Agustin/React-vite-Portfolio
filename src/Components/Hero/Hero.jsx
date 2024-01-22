@@ -15,9 +15,9 @@ const Hero = () => {
                 Analista <span className='text-primary'>Programador</span>
             </h1>
             <p className='mt-2 xl:-mr-40 sm:m-5 min-[700px]:text3xl'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptates
-                accusantium molestiae corporis fugit aperiam veritatis nisi id, neque eveniet, 
-                repudiandae quae laboriosam mollitia quidem aut! Quis quasi harum dignissimos!
+            Tecnico Superior en Programacion y Analisis de Sistemas con buenas habilidades 
+            para la resolución de problemas. Capaz de desempeñarse bien en un equipo. 
+            Apasionado por la codificación y poniendo especial énfasis en escribir código de buena calidad.
             </p>
             <div className='mt-5 flex '>
                 <a href="https://github.com/Guerre-Pablo-Agustin" target="_blank" className='bg-primary px-5 py-3 rounded-full 
