@@ -21,7 +21,7 @@ const Hero = () => {
             </p>
             <div className='mt-5 flex '>
                 <a href="https://github.com/Guerre-Pablo-Agustin" target="_blank" className='bg-primary px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md animate-bounce'>
+                text-white mt-2 flex gap-2 shadow-md '>
                     <AiFillGithub className='text-3xl' />
                 </a>
             </div>
@@ -30,7 +30,7 @@ const Hero = () => {
     {/* Imagen */}
     <div className='md:col-span-5 flex items-center justify-center '>
         <img src={imagen} 
-         className="w-full md:w-[80%] sm:w-[100%] h-auto  min-[700px]:mb-20 max-[600px]:mb-20 shadow-xl shadow-prymary" 
+         className="w-full md:w-[80%] sm:w-[100%] h-auto  min-[700px]:mb-20 max-[600px]:mb-20" 
          alt="imagen" 
          />
     </div>
