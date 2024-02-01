@@ -18,17 +18,17 @@ const Nav = () => {
         </span>
       </div>
       <nav
-        className={` italic w-[80%] md:w-[60%] xl:w-full h-full font-bold ${
+        className={`fixed italic w-[80%] md:w-[60%] xl:w-full h-full font-bold ${
           showMenu ? "left-0" : "-left-full"
         } top-0 xl:static
          flex-1 flex flex-col xl:flex-row items-center justify-center gap-10
          transition-all duration-500 z-50 max-[900px]:bg-primary`}
       >
-        <a className="hover:text-primary hover:text-xl" href="#Home">Home</a>
-        <a className="hover:text-primary hover:text-xl"  href="#about">About</a>
-        <a className="hover:text-primary hover:text-xl"  href="#skills">Skills</a>
-        <a className="hover:text-primary hover:text-xl"  href="#projects">Projects</a>
-        <a className="hover:text-primary hover:text-xl" href="#contacto">Contact</a>
+        <a className="hover:text-primary hover:underline hover:text-xl" href="#Home">Home</a>
+        <a className="hover:text-primary hover:underline hover:text-xl" href="#about">About</a>
+        <a className="hover:text-primary hover:underline hover:text-xl"  href="#skills">Skills</a>
+        <a className="hover:text-primary hover:underline hover:text-xl" href="#projects">Projects</a>
+        <a className="hover:text-primary hover:underline hover:text-xl" href="#contacto">Contact</a>
         <button onClick={() => setShowMenu(!showMenu)} className="xl:hidden text-4xl">
         {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
         </button>

@@ -65,14 +65,14 @@ const Contacto = () => {
 
       {/* Imagen */}
       <div className="md:col-span-1 max-[600px]:m-5 -mr-20">
-        <h2 className="text-2xl font-bold m-8 flex items-center justify-center underline decoration-primary decoration-4 ">
+        <h1 className=" italic w-[50%] rounded-md text-2xl font-bold m-8 flex items-center justify-center text-center bg-primary text-white p-2 ">
           Formulario de Contacto
-        </h2>
+        </h1>
         <div className="mb-4 flex items-center justify-center">
           <img
             className="w-[70%] shadow-xl shadow-prymary"
             src={formulario}
-            alt=""
+            alt="fomrulario"
           />
         </div>
       </div>
