@@ -1,4 +1,4 @@
-import React from "react";
+
 //imagenes
 import pokedex from "./img/pokedex.png";
 import clima from "./img/clima.png";
@@ -8,8 +8,8 @@ import { AiFillGithub,AiOutlineLink } from "react-icons/ai";
 const Projects = () => {
   return (
     <section id="projects" className="min-h-[90vh] grid grid-cols-1 ">
-      <div className="bg-primary flex justify-center items-center mt-2">
-        <h1 className="bg-white p-2 rounded-md text-primary font-bold italic max-[600px]:mt-10 text-5xl mt-10">
+      <div className="bg-primary flex justify-center items-center mt-2 ">
+        <h1 className="bg-white p-2 rounded-md text-primary font-bold italic max-[600px]:mt-10 text-5xl mt-10 ">
           Mis proyectos
         </h1>
       </div>
@@ -42,14 +42,14 @@ const Projects = () => {
         </div>
         <div className='flex gap-4 -mt-10' >
         <div className='mt-10 flex'>
-                <a href="https://github.com/Guerre-Pablo-Agustin/Pokedex" target="_blank" className='bg-primary px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md '>
+                <a href="https://github.com/Guerre-Pablo-Agustin/Pokedex" target="_blank" className='bg-primary px-5 py-3 rounded-md 
+                text-white mt-2 flex gap-2 shadow-md shadow-primary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
                     <AiFillGithub className='text-3xl' />
                 </a>
         </div>
         <div className='mt-10 flex'>
-                <a href="https://app-pokedex-gap.netlify.app" target="_blank" className='bg-primary px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md '>
+                <a href="https://app-pokedex-gap.netlify.app" target="_blank" className='bg-secondary px-5 py-3 rounded-md 
+                text-white mt-2 flex gap-2 shadow-md shadow-secondary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
                     <AiOutlineLink className='text-3xl' />
                 </a>
         </div>
@@ -80,14 +80,14 @@ const Projects = () => {
         </div>
         <div className='flex gap-4 -mt-10' >
         <div className='mt-10 flex'>
-                <a href="https://github.com/Guerre-Pablo-Agustin/Clima" target="_blank" className='bg-primary px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md '>
+                <a href="https://github.com/Guerre-Pablo-Agustin/Clima" target="_blank" className='bg-primary px-5 py-3 rounded-md 
+                text-white mt-2 flex gap-2 shadow-md shadow-primary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
                     <AiFillGithub className='text-3xl' />
                 </a>
         </div>
         <div className='mt-10 flex'>
-                <a href="https://app-clima-gpa.netlify.app" target="_blank" className='bg-primary px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md '>
+                <a href="https://app-clima-gpa.netlify.app" target="_blank" className='bg-secondary px-5 py-3 rounded-md 
+                text-white mt-2 flex gap-2 shadow-md shadow-secondary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
                     <AiOutlineLink className='text-3xl' />
                 </a>
         </div>

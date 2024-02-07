@@ -22,7 +22,7 @@ const Nav = () => {
           showMenu ? "left-0" : "-left-full"
         } top-0 xl:static
          flex-1 flex flex-col xl:flex-row items-center justify-center gap-10
-         transition-all duration-500 z-50 max-[900px]:bg-primary`}
+         transition-all duration-500 z-50 max-[900px]:bg-primary max-[900px]:text-xl`}
       >
         <a className="hover:text-primary hover:underline hover:text-xl" href="#Home">Home</a>
         <a className="hover:text-primary hover:underline hover:text-xl" href="#about">About</a>

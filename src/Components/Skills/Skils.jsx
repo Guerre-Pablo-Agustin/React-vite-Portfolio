@@ -42,9 +42,9 @@ const Skills = () => {
           Mis Conocimientos
         </h1>
       </div>
-      <div className=" m-5 flex-grow flex items-center justify-center flex-row max-[900px]:flex-col">
+      <div className=" w-[80%] m-5 flex items-center justify-center text-center flex-row max-[900px]:flex-col mx-auto my-auto mt-4">
         {/*Imagen*/}
-        <div className=" p-10 flexitems-center justify-center ms:w-full ">
+        <div className="  flex items-center justify-center ms:w-full ">
           <img
             src={imagen}
             className=" min-[400px]:w[80%]  min-[1300px]:ml-10"
@@ -52,7 +52,7 @@ const Skills = () => {
           />
         </div>
         {/*Habilidades*/}
-        <div className="flex flex-col items-center w-full m-8 text-xl italic">
+        <div className="flex flex-col items-center w-full  text-xl italic">
           <div className="flex flex-wrap flex-col gap-4 text-lg">
             <p className="text-center text-xl font-bold">
               Motores de bases de datos

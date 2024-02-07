@@ -1,4 +1,4 @@
-import React from "react";
+
 //imagen
 import analista from "./img/analista.png";
 import diseñador from "./img/diseñador.png";
@@ -69,10 +69,10 @@ const About = () => {
       </div>
 
       {/*Desarrollador Web*/}
-      <div className="cursor-pointer md:col-span-1 bg-white md:max-w-2xl 
+      <div className="cursor-pointer md:col-span-1 bg-white max-w-2xl 
                       mx-auto py-4 px-6 rounded-lg shadow-xl 
                       min-[1300px]:hover:scale-110 transition-all duration-500
-                      max-[600px]:m-2 max-[600px]:-p-4">
+                      max-[600px]:m-2">
         <div className="flex items-center justify-center mb-4">
           <span className="bg-primary text-white py-2 px-4 text-lg rounded uppercase">
             Desarrollador Web

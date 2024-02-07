@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FaTelegramPlane } from "react-icons/fa";
@@ -64,13 +64,13 @@ const Contacto = () => {
       <Toaster position="bottom-left" />
 
       {/* Imagen */}
-      <div className="md:col-span-1 max-[600px]:m-5 -mr-20">
-        <h1 className=" italic w-[50%] rounded-md text-2xl font-bold m-8 flex items-center justify-center text-center bg-primary text-white p-2 ">
+      <div className=" md:col-span-1 max-[600px]:m-5 ">
+        <h1 className="m-auto italic w-[50%] rounded-md text-2xl font-bold mt-4 mb-5 flex items-center justify-center text-center bg-primary text-white p-2 shadow-sm shadow-gray-400 ">
           Formulario de Contacto
         </h1>
         <div className="mb-4 flex items-center justify-center">
           <img
-            className="w-[70%] shadow-xl shadow-prymary"
+            className="w-[50%] "
             src={formulario}
             alt="fomrulario"
           />
@@ -152,8 +152,8 @@ const Contacto = () => {
               <a
                 href="[1]"
                 target="_blank"
-                className="bg-green-500 px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md animate-bounce"
+                className="bg-green-500 px-5 py-3 rounded-md 
+                text-white mt-2 flex gap-2 shadow-md shadow-green-500/50 hover:scale-110 transition-all  "
               >
                 <AiOutlineWhatsApp className="text-3xl" />
               </a>
@@ -162,8 +162,8 @@ const Contacto = () => {
               <a
                 href="[2]"
                 target="_blank"
-                className="bg-secondary px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md animate-bounce"
+                className="bg-secondary px-5 py-3 rounded-md 
+                text-white mt-2 flex gap-2 shadow-md shadow-secondary/50 hover:scale-110 transition-all "
               >
                 <FaTelegramPlane className="text-3xl" />
               </a>
@@ -172,8 +172,8 @@ const Contacto = () => {
               <a
                 href="[3]"
                 target="_blank"
-                className="bg-secondary px-5 py-3 rounded-full 
-                text-white mt-2 flex gap-2 shadow-md animate-bounce"
+                className="bg-secondary px-5 py-3 rounded-md 
+                text-white mt-2 flex gap-2 shadow-md shadow-secondary/50 hover:scale-110 transition-all "
               >
                 <BiLogoLinkedinSquare className="text-3xl" />
               </a>
