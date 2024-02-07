@@ -2,6 +2,7 @@
 //imagenes
 import pokedex from "./img/pokedex.png";
 import clima from "./img/clima.png";
+import henrucci from "./img/henrucci.png";
 //icons
 import { AiFillGithub,AiOutlineLink } from "react-icons/ai";
 
@@ -87,6 +88,43 @@ const Projects = () => {
         </div>
         <div className='mt-10 flex'>
                 <a href="https://app-clima-gpa.netlify.app" target="_blank" className='bg-secondary px-5 py-3 rounded-md 
+                text-white mt-2 flex gap-2 shadow-md shadow-secondary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
+                    <AiOutlineLink className='text-3xl' />
+                </a>
+        </div>
+        </div>
+      </div>
+       {/*henrucci App*/}
+       <div className="cursor-pointer md:col-span-1 bg-white max-w-2xl 
+                      mx-auto py-4 px-6 rounded-lg shadow-xl 
+                      min-[1300px]:hover:scale-110 transition-all duration-500
+                      max-[600px]:m-2">
+        <div className="flex items-center justify-center mb-4">
+          <span className="bg-primary text-white py-2 px-4 text-3xl rounded uppercase">
+            Henrucci tienda
+          </span>
+        </div>
+        <div className="flex flex-col gap-2 mb-4 items-center justify-center">
+            <img 
+            className="md:w-[80%] md:h-[200px]"
+             src={henrucci} alt="analista" 
+             />
+        </div>
+        <div className="flex flex-col gap-2 mb-4 ">
+          <p className="text-gray-600 font-bold">
+            Ecommerce de ropa creado con Next.js, tailwind css, <br />
+            pasarela de pago (paypal)<br />
+          </p>
+        </div>
+        <div className='flex gap-4 -mt-10' >
+        <div className='mt-10 flex'>
+                <a href="https://github.com/Guerre-Pablo-Agustin/Clima" target="_blank" className='bg-primary px-5 py-3 rounded-md 
+                text-white mt-2 flex gap-2 shadow-md shadow-primary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
+                    <AiFillGithub className='text-3xl' />
+                </a>
+        </div>
+        <div className='mt-10 flex'>
+                <a href="https://pf-henry-15a-ecommerce-frontend.vercel.app" target="_blank" className='bg-secondary px-5 py-3 rounded-md 
                 text-white mt-2 flex gap-2 shadow-md shadow-secondary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
                     <AiOutlineLink className='text-3xl' />
                 </a>

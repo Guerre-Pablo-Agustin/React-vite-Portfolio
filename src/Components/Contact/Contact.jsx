@@ -170,10 +170,10 @@ const Contacto = () => {
             </div>
             <div className="mt-10 flex">
               <a
-                href="[3]"
+                href="https://www.linkedin.com/in/pablo-agustin-guerreño/"
                 target="_blank"
                 className="bg-secondary px-5 py-3 rounded-md 
-                text-white mt-2 flex gap-2 shadow-md shadow-secondary/50 hover:scale-110 transition-all "
+                text-white mt-2 flex gap-2 shadow-md shadow-secondary/50 hover:scale-110 transition-all " rel="noreferrer"
               >
                 <BiLogoLinkedinSquare className="text-3xl" />
               </a>

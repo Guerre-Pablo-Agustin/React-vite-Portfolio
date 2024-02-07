@@ -17,7 +17,7 @@ const Hero = () => {
             </h1>
             <p className=' mt-2  sm:m-5 text-lg  italic font-semibold'>
                 Técnico Superior en Programación y Análisis de Sistemas con buenas habilidades 
-                para la resolución de problemas. Capaz de desempeñarse bien en un equipo. 
+                para la resolución de problemas, capaz de desempeñarse bien en un equipo. 
                 Apasionado por la codificación y poniendo especial énfasis en escribir código de buena calidad.
             </p>
             <div className='mb-5 -mt-5 gap-2 flex'>
