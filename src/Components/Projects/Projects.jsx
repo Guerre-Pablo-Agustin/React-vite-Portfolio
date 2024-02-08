@@ -1,138 +1,137 @@
-
-//imagenes
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/free-mode";
+import { FreeMode, Pagination } from "swiper/modules";
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 import pokedex from "./img/pokedex.png";
 import clima from "./img/clima.png";
 import henrucci from "./img/henrucci.png";
-//icons
-import { AiFillGithub,AiOutlineLink } from "react-icons/ai";
+import paises from "./img/paises.png";
+import { useState } from "react";
+
+const projects = [
+  {
+    name: "Pokedex",
+    image: pokedex,
+    description: "Proyecto Pokedex creado con HTML, CSS, JavaScript",
+    githubLink: "https://github.com/Guerre-Pablo-Agustin/Pokedex",
+    liveLink: "https://app-pokedex-gap.netlify.app",
+  },
+  {
+    name: "Clima App",
+    image: clima,
+    description: "Proyecto Clima creado con HTML, CSS, JavaScript",
+    githubLink: "https://github.com/Guerre-Pablo-Agustin/Clima",
+    liveLink: "https://app-clima-gpa.netlify.app",
+  },
+  {
+    name: "Henrucci tienda",
+    image: henrucci,
+    description: "Ecommerce de ropa creado con Next.js, tailwind css, pasarela de pago paypal",
+    githubLink: "https://github.com/Guerre-Pablo-Agustin/Clima",
+    liveLink: "https://pf-henry-15a-ecommerce-frontend.vercel.app",
+  },
+  {
+    name: "App de Paises",
+    image: paises,
+    description: "Proyecto Paises creado con Vite, node, express y postgres",
+    githubLink: "https://github.com/Guerre-Pablo-Agustin/cr-pi-countries-main",
+    liveLink: "https://countries-project-iota.vercel.app",
+  },
+];
 
 const Projects = () => {
+  const [hoverIndex, setHoverIndex] = useState(null);
+
   return (
-    <section id="projects" className="min-h-[90vh] grid grid-cols-1 ">
-      <div className="bg-primary flex justify-center items-center mt-2 ">
-        <h1 className="bg-white p-2 rounded-md text-primary font-bold italic max-[600px]:mt-10 text-5xl mt-10 ">
+    <div id="projects" className="min-h-[90vh] grid grid-cols-1">
+      <div className="bg-primary flex justify-center items-center mt-2">
+        <h1 className=" p-2 rounded-md text-white font-bold italic max-[600px]:mt-10 text-5xl mt-10">
           Mis proyectos
         </h1>
       </div>
-
-      {/*Mis proyectos*/}
-      <div className="bg-primary grid italic grid-cols-1 md:grid-cols-3  
-                gap-4 p-10 max-[600px]:p-4 ">
-
-       {/*Pokedex*/}
-       <div className="cursor-pointer md:col-span-1 bg-white max-w-2xl 
-                      mx-auto py-4 px-6 rounded-lg shadow-xl 
-                      min-[1300px]:hover:scale-110 transition-all duration-500
-                      max-[600px]:m-2">
-        <div className="flex items-center justify-center mb-4">
-          <span className="bg-primary text-white py-2 px-4 text-3xl rounded uppercase">
-            Pokedex
-          </span>
-        </div>
-        <div className="flex flex-col gap-2 mb-4 items-center justify-center">
-            <img 
-            className="md:w-[80%] md:h-[200px]"
-             src={pokedex} alt="analista" 
-             />
-        </div>
-        <div className="flex flex-col gap-2 mb-4 ">
-          <p className="text-gray-600 font-bold">
-            Proyecto Pokedex creado con HTML, CSS, JavaScript <br />
-            API Pokemon <br />
-          </p>
-        </div>
-        <div className='flex gap-4 -mt-10' >
-        <div className='mt-10 flex'>
-                <a href="https://github.com/Guerre-Pablo-Agustin/Pokedex" target="_blank" className='bg-primary px-5 py-3 rounded-md 
-                text-white mt-2 flex gap-2 shadow-md shadow-primary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
-                    <AiFillGithub className='text-3xl' />
-                </a>
-        </div>
-        <div className='mt-10 flex'>
-                <a href="https://app-pokedex-gap.netlify.app" target="_blank" className='bg-secondary px-5 py-3 rounded-md 
-                text-white mt-2 flex gap-2 shadow-md shadow-secondary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
-                    <AiOutlineLink className='text-3xl' />
-                </a>
-        </div>
-        </div>
+      <div className="bg-primary flex items-center justify-center flex-col">
+        <Swiper
+          breakpoints={{
+            340: {
+              slidesPerView: 1,
+              spaceBetween: 30,
+            },
+            700: {
+              slidesPerView: 2,
+              spaceBetween: 15,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+          freeMode={true}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 1,
+          }}
+          modules={[FreeMode, Pagination]}
+          className="w-[90%] sm:w-[full]"
+        >
+          {projects.map((project, index) => (
+            <SwiperSlide
+              key={index}
+              className="flex items-center justify-center rounded-md"
+            >
+              <div
+                className="relative"
+                onMouseEnter={() => setHoverIndex(index)}
+                onMouseLeave={() => setHoverIndex(null)}
+              >
+                <div
+                  className={`${
+                    hoverIndex === index ? "opacity-100" : "opacity-0"
+                  } absolute inset-0 bg-hover  transition-opacity duration-200 rounded-md`}
+                />
+                <div
+                  className={`${
+                    hoverIndex === index ? "opacity-100" : "opacity-0"
+                  } absolute inset-0 text-white flex flex-col gap-3 justify-center items-center transition-opacity cursor-pointer duration-300 px-6 py-8`}
+                >
+                  <h1 className="text-xl lg:text-2xl">{project.name} </h1>
+                  <p className="lg:text-[18px]">{project.description} </p>
+                  <div className="flex gap-4">
+                    <div className="flex">
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        className="bg-primary px-5 py-3 rounded-md text-white mt-2 flex gap-2 shadow-md shadow-primary hover:scale-110 transition-all duration-100 "
+                        rel="noreferrer"
+                      >
+                        <AiFillGithub className="text-3xl" />
+                      </a>
+                    </div>
+                    <div className="flex">
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        className="bg-secondary px-5 py-3 rounded-md text-white mt-2 flex gap-2 shadow-md shadow-secondary hover:scale-110 transition-all duration-100 "
+                        rel="noreferrer"
+                      >
+                        <AiOutlineLink className="text-3xl" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  className="w-[215px] lg:w-[350px] max-[900px]:w-[400px]  h-[250px] lg:h-[400px] max-[900px]:h-[400px] object-cover  rounded-md cursor-pointer "
+                  src={project.image}
+                  alt={project.name}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-
-       {/*Clima App*/}
-       <div className="cursor-pointer md:col-span-1 bg-white max-w-2xl 
-                      mx-auto py-4 px-6 rounded-lg shadow-xl 
-                      min-[1300px]:hover:scale-110 transition-all duration-500
-                      max-[600px]:m-2">
-        <div className="flex items-center justify-center mb-4">
-          <span className="bg-primary text-white py-2 px-4 text-3xl rounded uppercase">
-            Clima App
-          </span>
-        </div>
-        <div className="flex flex-col gap-2 mb-4 items-center justify-center">
-            <img 
-            className="md:w-[80%] md:h-[200px]"
-             src={clima} alt="analista" 
-             />
-        </div>
-        <div className="flex flex-col gap-2 mb-4 ">
-          <p className="text-gray-600 font-bold">
-            Proyecto Clima creado con HTML, CSS, JavaScript <br />
-            API Openweathermap <br />
-          </p>
-        </div>
-        <div className='flex gap-4 -mt-10' >
-        <div className='mt-10 flex'>
-                <a href="https://github.com/Guerre-Pablo-Agustin/Clima" target="_blank" className='bg-primary px-5 py-3 rounded-md 
-                text-white mt-2 flex gap-2 shadow-md shadow-primary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
-                    <AiFillGithub className='text-3xl' />
-                </a>
-        </div>
-        <div className='mt-10 flex'>
-                <a href="https://app-clima-gpa.netlify.app" target="_blank" className='bg-secondary px-5 py-3 rounded-md 
-                text-white mt-2 flex gap-2 shadow-md shadow-secondary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
-                    <AiOutlineLink className='text-3xl' />
-                </a>
-        </div>
-        </div>
-      </div>
-       {/*henrucci App*/}
-       <div className="cursor-pointer md:col-span-1 bg-white max-w-2xl 
-                      mx-auto py-4 px-6 rounded-lg shadow-xl 
-                      min-[1300px]:hover:scale-110 transition-all duration-500
-                      max-[600px]:m-2">
-        <div className="flex items-center justify-center mb-4">
-          <span className="bg-primary text-white py-2 px-4 text-3xl rounded uppercase">
-            Henrucci tienda
-          </span>
-        </div>
-        <div className="flex flex-col gap-2 mb-4 items-center justify-center">
-            <img 
-            className="md:w-[80%] md:h-[200px]"
-             src={henrucci} alt="analista" 
-             />
-        </div>
-        <div className="flex flex-col gap-2 mb-4 ">
-          <p className="text-gray-600 font-bold">
-            Ecommerce de ropa creado con Next.js, tailwind css, <br />
-            pasarela de pago (paypal)<br />
-          </p>
-        </div>
-        <div className='flex gap-4 -mt-10' >
-        <div className='mt-10 flex'>
-                <a href="https://github.com/Guerre-Pablo-Agustin/Clima" target="_blank" className='bg-primary px-5 py-3 rounded-md 
-                text-white mt-2 flex gap-2 shadow-md shadow-primary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
-                    <AiFillGithub className='text-3xl' />
-                </a>
-        </div>
-        <div className='mt-10 flex'>
-                <a href="https://pf-henry-15a-ecommerce-frontend.vercel.app" target="_blank" className='bg-secondary px-5 py-3 rounded-md 
-                text-white mt-2 flex gap-2 shadow-md shadow-secondary hover:scale-110  transition-all duration-100 ' rel="noreferrer">
-                    <AiOutlineLink className='text-3xl' />
-                </a>
-        </div>
-        </div>
-      </div>
-      </div>
-    </section>
+    </div>
   );
 };
 
