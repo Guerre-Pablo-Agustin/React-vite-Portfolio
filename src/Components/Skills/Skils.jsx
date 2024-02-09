@@ -58,10 +58,10 @@ const Skills = () => {
               Motores de bases de datos
             </p>
             <div className="flex flex-wrap justify-center gap-1 w-full">
-              <BiLogoMongodb className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white" />
-              <SiMysql className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white" />
-              <BiLogoPostgresql className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white" />
-              <SiMicrosoftsqlserver className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white" />
+              <BiLogoMongodb className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white  shadow-md shadow-primary/100" />
+              <SiMysql className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white shadow-md shadow-primary/100" />
+              <BiLogoPostgresql className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white shadow-md shadow-primary/100" />
+              <SiMicrosoftsqlserver className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white shadow-md shadow-primary/100" />
             </div>
           </div>
           <br />
@@ -69,14 +69,14 @@ const Skills = () => {
             <p className="text-center text-xl font-bold">
               Herramientas de desarrollo
             </p>
-            <div className="flex flex-wrap justify-center gap-1 w-full ">
-              <BiLogoHtml5 className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white" />
-              <IoLogoJavascript className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white" />
-              <SiVite className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white" />
-              <BiLogoWordpress className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white" />
-              <SiNextdotjs className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white" />
-              <BiLogoCss3 className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white" />
-              <SiTailwindcss className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white" />
+            <div className="flex flex-wrap justify-center gap-1 w-full">
+              <BiLogoHtml5 className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white shadow-md shadow-primary/100" />
+              <IoLogoJavascript className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white shadow-md shadow-primary/100" />
+              <SiVite className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white shadow-md shadow-primary/100" />
+              <BiLogoWordpress className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white shadow-md shadow-primary/100" />
+              <SiNextdotjs className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white shadow-md shadow-primary/100" />
+              <BiLogoCss3 className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white shadow-md shadow-primary/100" />
+              <SiTailwindcss className="text-5xl md:text-7xl  bg-primary p-2 rounded-md text-white shadow-md shadow-primary/100" />
             </div>
           </div>
           <br />

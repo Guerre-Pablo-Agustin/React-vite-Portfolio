@@ -137,7 +137,7 @@ const Contacto = () => {
 
             <button
               type="submit"
-              className="relative py-2 px-6 text-center text-primary border border-primary rounded-full overflow-hidden transition-all ease-in-out before:absolute before:bg-primary before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:-z-10 before:transition-all before:duration-500 before:w-full before:h-0 before:rotate-45 hover:before:h-[380%] hover:text-white"
+              className="relative py-2 px-6 text-center text-primary border border-primary rounded-md shadow-md shadow-primary/100 overflow-hidden transition-all ease-in-out before:absolute before:bg-primary before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:-z-10 before:transition-all before:duration-500 before:w-full before:h-0 before:rotate-45 hover:before:h-[380%] hover:text-white"
             >
               Enviar Mensaje
             </button>
