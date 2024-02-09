@@ -25,7 +25,7 @@ const Hero = () => {
                 text-white flex  gap-2 shadow-md shadow-primary hover:transform hover:scale-110 transition-all' rel="noreferrer">
                     <AiFillGithub className='text-3xl' />
                 </a>
-                <a href="https://drive.google.com/file/d/1Rbomf8r-fjUohI0uXImn4fQIfRq89Afz/view" target="_blank" className='bg-primary px-5 py-3 rounded-md 
+                <a href="https://drive.google.com/file/d/1w-wC2y5NpCsJY1FEKkOHG1KdXaQsqI1j/view?usp=drive_link" target="_blank" className='bg-primary px-5 py-3 rounded-md 
                 text-white flex  gap-2 shadow-md hover:transform hover:scale-110 transition-all shadow-primary ' rel="noreferrer">
                  Descargar CV  <FaFileAlt className='text-2xl' />
                 </a>
