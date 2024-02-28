@@ -150,8 +150,9 @@ const Contacto = () => {
           <div className="flex gap-4 -mt-14">
             <div className="mt-10 flex">
               <a
-                href="[1]"
+                href="https://api.whatsapp.com/send?phone=3765365116"
                 target="_blank"
+                rel="noreferrer"
                 className="bg-green-500 px-5 py-3 rounded-md 
                 text-white mt-2 flex gap-2 shadow-md shadow-green-500/50 hover:scale-110 transition-all  "
               >
@@ -160,8 +161,9 @@ const Contacto = () => {
             </div>
             <div className="mt-10 flex">
               <a
-                href="[2]"
+                href="https://t.me/Pablo0995"
                 target="_blank"
+                rel="noreferrer"
                 className="bg-secondary px-5 py-3 rounded-md 
                 text-white mt-2 flex gap-2 shadow-md shadow-secondary/50 hover:scale-110 transition-all "
               >
