@@ -38,7 +38,7 @@ const Hero = () => {
               <AiFillGithub className="text-3xl" />
             </a>
             <a
-              href="https://drive.google.com/file/d/1w-wC2y5NpCsJY1FEKkOHG1KdXaQsqI1j/view?usp=drive_link"
+              href="/docs/CV_Pablo_guerreño.pdf"
               target="_blank"
               className="relative flex flex-row gap-2 py-2 px-6 text-center text-primary border border-primary rounded-full shadow-md shadow-primary/100 overflow-hidden transition-all ease-in-out before:absolute before:bg-primary before:top-1/2 before:left-1/2 before:-translate-x-1/2 before:-translate-y-1/2 before:-z-10 before:transition-all before:duration-500 before:w-full before:h-0 before:rotate-45 hover:before:h-[380%] hover:text-white"
               rel="noreferrer"

@@ -8,7 +8,7 @@ import { Toaster, toast } from "react-hot-toast";
 
 const Contacto = () => {
   const form = useRef();
-  const [mostrarMensajeExito, setMostrarMensajeExito] = useState(false);
+  // const [mostrarMensajeExito, setMostrarMensajeExito] = useState(false);
   const [formularioData, setFormularioData] = useState({
     nombre: "",
     email: "",

@@ -1,9 +1,8 @@
-import { useState } from "react";
 //icono
 import {
   BiLogoMongodb,
   BiLogoPostgresql,
-  BiLogoPhp,
+  // BiLogoPhp,
   BiLogoHtml5,
   BiLogoCss3,
   BiLogoWordpress,
@@ -12,7 +11,7 @@ import {
   SiMysql,
   SiMicrosoftsqlserver,
   SiVite,
-  SiCsharp,
+  // SiCsharp,
   SiNextdotjs,
   SiTailwindcss,
 } from "react-icons/si";
@@ -22,11 +21,13 @@ import { IoLogoJavascript } from "react-icons/io";
 import imagen from "./img/habilidades.avif";
 
 const Skills = () => {
-  const [activeTab, setActiveTab] = useState("database"); // Estado para controlar la pestaña activa
 
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
-  };
+
+  // const [activeTab, setActiveTab] = useState("database"); // Estado para controlar la pestaña activa
+
+  // const handleTabClick = (tab) => {
+  //   setActiveTab(tab);
+  // };
 
   return (
     <section
