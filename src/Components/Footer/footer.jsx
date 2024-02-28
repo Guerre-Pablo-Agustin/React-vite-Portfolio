@@ -53,7 +53,7 @@ const Footer = () => {
                 className="text-white hover:text-blue-400 flex items-center gap-1"
               >
                 <i className="fa fa-twitter"></i>
-                <BiLogoLinkedinSquare /> Linkedin
+                <BiLogoLinkedinSquare /> @pablo-agustin-guerreño
               </a>
             </li>
           </ul>
