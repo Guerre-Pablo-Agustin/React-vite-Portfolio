@@ -51,9 +51,11 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/pablo-agustin-guerreño/"
                 className="text-white hover:text-blue-400 flex items-center gap-1"
+                target="_blank"
+                rel="noreferrer"
               >
                 <i className="fa fa-twitter"></i>
-                <BiLogoLinkedinSquare /> @pablo-agustin-guerreño
+                <BiLogoLinkedinSquare /> @Pablo Guerreño
               </a>
             </li>
           </ul>
