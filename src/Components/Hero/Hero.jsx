@@ -8,21 +8,27 @@ const Hero = () => {
   return (
     <section
       id="Home"
-      className="w-[95%] flex justify-center text-center items-center md:flex-row sm:flex-col m-auto mb-10 g-4"
+      className="w-full flex justify-center text-center items-center md:flex-row max-[800px]:flex-col m-auto mb-20 g-2  "
     >
       {/* Informacion */}
-      <div className="flex flex-col justify-center max-w-[600px] w-[40%]">
-        <div className="flex flex-col gap-6 sm:m-5">
-          <h1 className="text-5xl md:text-7xl font-bold italic text-center ">
-            Analista <span className="text-primary">Programador</span>
-          </h1>
-          <p className=" mt-2  sm:m-5 text-lg  italic font-semibold">
-            Técnico Superior en Programación y Análisis de Sistemas con buenas
-            habilidades para la resolución de problemas, capaz de desempeñarse
-            bien en un equipo. Apasionado por la codificación y poniendo
-            especial énfasis en escribir código de buena calidad.
-          </p>
-          <div className="mb-5 -mt-5 gap-4 flex ">
+      <div className="flex flex-col justify-center  w-[40%]">
+        <div className="flex flex-col ">
+          <div className="flex flex-col m-4 items-center justify-center p-6 h-auto">
+            <h1 className=" text-wrap text-5xl md:text-7xl font-bold italic text-center py-5 flex items-center justify-center flex-col">
+              Analista{" "}
+              <span className=" text-primary text-center max-[800px]:m-10">
+                Programador
+              </span>
+            </h1>
+            <p className="text-wrap mt-2 text-lg italic flex text-justify h-[230px] w-[400px] p-8">
+              Técnico Superior en Programación y Análisis de Sistemas con buenas
+              habilidades para la resolución de problemas, capaz de desempeñarse
+              bien en un equipo. Apasionado por la codificación y poniendo
+              especial énfasis en escribir código de buena calidad.
+            </p>
+          </div>
+
+          <div className="mb-5  gap-4 flex item-center justify-center max-[800px]:justify-between max-[800px]:flex-col">
             <a
               href="https://github.com/Guerre-Pablo-Agustin"
               target="_blank"
