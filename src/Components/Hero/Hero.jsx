@@ -1,3 +1,5 @@
+//framer-motion
+import { motion } from "framer-motion";
 //icons
 import { AiFillGithub } from "react-icons/ai";
 import { FaFileAlt } from "react-icons/fa";
@@ -6,9 +8,12 @@ import imagen from "./img/Hero-img.png";
 
 const Hero = () => {
   return (
-    <section
+    <motion.section
       id="Home"
       className="w-full flex justify-center text-center items-center md:flex-row max-[800px]:flex-col m-auto mb-20 g-2  "
+      initial={{ opacity: 0, y: 200 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
     >
       {/* Informacion */}
       <div className="flex flex-col justify-center  w-[40%]">
@@ -56,7 +61,7 @@ const Hero = () => {
           alt="imagen"
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

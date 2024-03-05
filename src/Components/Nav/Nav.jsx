@@ -10,7 +10,7 @@ import {
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <header className=" italic flex items-center w-full p-6 h-[10vh] justify-between xl:justify-start">
+    <header className="italic flex items-center w-full p-6 h-[10vh] justify-between xl:justify-start">
       <div className="hl:w-1/6 text-center">
         <span className="font-bold text-4xl relative p-1 bg-white">
           Portfolio <span className="text-primary">.</span>
