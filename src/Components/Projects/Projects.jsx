@@ -8,6 +8,7 @@ import pokedex from "./img/pokedex.png";
 import clima from "./img/clima.png";
 import henrucci from "./img/henrucci.png";
 import paises from "./img/paises.png";
+import propiedades from "./img/propiedades.png";
 import { useState } from "react";
 
 const projects = [
@@ -39,6 +40,13 @@ const projects = [
     githubLink: "https://github.com/Guerre-Pablo-Agustin/cr-pi-countries-main",
     liveLink: "https://countries-project-iota.vercel.app",
   },
+  {
+    name:"App de propiedades",
+    image:propiedades,
+    description:"Proyecto propiedades creado con Nextjs, tailwindcss y Framer Motion",
+    githubLink:"https://github.com/Guerre-Pablo-Agustin/App-Properties",
+    liveLink:"https://propiedades-app.netlify.app",
+  }
 ];
 
 const Projects = () => {
@@ -55,15 +63,15 @@ const Projects = () => {
         <Swiper
           breakpoints={{
             340: {
-              slidesPerView: 1,
+              slidesPerView: 1.5,
               spaceBetween: 30,
             },
             700: {
-              slidesPerView: 2,
+              slidesPerView: 2.5,
               spaceBetween: 15,
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 4.5,
               spaceBetween: 30,
             },
           }}
