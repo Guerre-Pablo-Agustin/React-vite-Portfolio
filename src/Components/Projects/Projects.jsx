@@ -9,6 +9,7 @@ import clima from "./img/clima.png";
 import henrucci from "./img/henrucci.png";
 import paises from "./img/paises.png";
 import propiedades from "./img/propiedades.png";
+import dashboard from "./img/dashboard.jpg";
 import { useState } from "react";
 
 const projects = [
@@ -46,6 +47,13 @@ const projects = [
     description:"Proyecto propiedades creado con Nextjs, tailwindcss y Framer Motion",
     githubLink:"https://github.com/Guerre-Pablo-Agustin/App-Properties",
     liveLink:"https://propiedades-app.netlify.app",
+  },
+  {
+    name:"Dashboard",
+    image:dashboard,
+    description:"Proyecto dashboard creado con Nextjs, tailwindcss, base de datos PostgreSQL",
+    githubLink:"https://github.com/Guerre-Pablo-Agustin/next-dashboard",
+    liveLink:"https://dashboard-next14-coral.vercel.app/dashboard",
   }
 ];
 
@@ -71,7 +79,7 @@ const Projects = () => {
               spaceBetween: 15,
             },
             1024: {
-              slidesPerView: 4.5,
+              slidesPerView: 3.5,
               spaceBetween: 30,
             },
           }}
