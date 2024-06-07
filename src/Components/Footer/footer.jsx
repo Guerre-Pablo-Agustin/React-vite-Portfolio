@@ -35,7 +35,7 @@ const Footer = () => {
                 href="#"
                 className="text-white hover:text-blue-400 flex items-center gap-1"
               >
-                <i className="fa fa-phone"></i> 3765365116
+                <i className="fa fa-phone"></i>Tel: 3765365116
               </a>
             </li>
             <li className="text-sm">
@@ -44,7 +44,7 @@ const Footer = () => {
                 className="text-white hover:text-blue-400 flex items-center gap-1"
               >
                 <i className="fa fa-envelope"></i>{" "}
-                guerre.pablo.agustin@gmail.com
+               Mail: guerre.pablo.agustin@gmail.com
               </a>
             </li>
             <li className="text-sm">

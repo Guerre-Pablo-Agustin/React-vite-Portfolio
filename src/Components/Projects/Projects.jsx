@@ -16,14 +16,16 @@ const projects = [
   {
     name: "Pokedex",
     image: pokedex,
-    description: "Proyecto Pokedex creado con HTML, CSS, JavaScript",
+    description: "Proyecto Pokedex creado con la API de PokeApi",
+    tecnologias:["HTML", "CSS", "JavaScript"],
     githubLink: "https://github.com/Guerre-Pablo-Agustin/Pokedex",
     liveLink: "https://app-pokedex-gap.netlify.app",
   },
   {
     name: "Clima App",
     image: clima,
-    description: "Proyecto Clima creado con HTML, CSS, JavaScript",
+    description: "Proyecto Clima creado con la API de OpenWeather",
+    tecnologias:["HTML", "CSS", "JavaScript"],
     githubLink: "https://github.com/Guerre-Pablo-Agustin/Clima",
     liveLink: "https://app-clima-gpa.netlify.app",
   },
@@ -31,6 +33,7 @@ const projects = [
     name: "Henrucci tienda",
     image: henrucci,
     description: "Ecommerce de ropa creado con Next.js, tailwind css, pasarela de pago paypal",
+    tecnologias:["Next.js", "Tailwindcss", "Paypal", "Javascript", "Node.js", "Express", "MongoDB"],
     githubLink: "https://github.com/Guerre-Pablo-Agustin/Clima",
     liveLink: "https://pf-henry-15a-ecommerce-frontend.vercel.app",
   },
@@ -38,20 +41,23 @@ const projects = [
     name: "App de Paises",
     image: paises,
     description: "Proyecto Paises creado con Vite, node, express y postgres",
+    tecnologias:["Vite", "Node", "Express", "PostgreSQL"],
     githubLink: "https://github.com/Guerre-Pablo-Agustin/cr-pi-countries-main",
     liveLink: "https://countries-project-iota.vercel.app",
   },
   {
     name:"App de propiedades",
     image:propiedades,
-    description:"Proyecto propiedades creado con Nextjs, tailwindcss y Framer Motion",
+    description:"Proyecto para venta y alquiler de propiedades",
+    tecnologias:["Next.js", "Tailwindcss", "Javascript", "Framer Motion"],
     githubLink:"https://github.com/Guerre-Pablo-Agustin/App-Properties",
     liveLink:"https://propiedades-app.netlify.app",
   },
   {
     name:"Dashboard",
     image:dashboard,
-    description:"Proyecto dashboard creado con Nextjs, tailwindcss, base de datos PostgreSQL",
+    description:"Proyecto dashboard creado para manejo de clientes y gastos",
+    tecnologias:["Next.js", "Tailwindcss", "Javascript", "PostgreSQL"],
     githubLink:"https://github.com/Guerre-Pablo-Agustin/next-dashboard",
     liveLink:"https://dashboard-next14-coral.vercel.app/dashboard",
   }
@@ -112,8 +118,18 @@ const Projects = () => {
                     hoverIndex === index ? "opacity-100" : "opacity-0"
                   } absolute inset-0 text-white flex flex-col gap-3 justify-center items-center transition-opacity cursor-pointer duration-300 px-6 py-8`}
                 >
-                  <h1 className="text-xl lg:text-2xl">{project.name} </h1>
-                  <p className="lg:text-[18px]">{project.description} </p>
+                  <h1 className="text-xl lg:text-md">{project.name} </h1>
+                  <p className="lg:text-md">{project.description} </p>
+                  <div className="gap-2 grid grid-cols-3 justify-center text-sm">
+                    {project.tecnologias.map((tecnologia, index) => (
+                      <p
+                        key={index}
+                        className="border-secondary  px-4 py-2 justify-center text-center rounded-md text-white flex shadow-md text-sm"
+                      >
+                        {tecnologia}
+                      </p>
+                    ))}
+                  </div>
                   <div className="flex gap-4">
                     <div className="flex">
                       <a
