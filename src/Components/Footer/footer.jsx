@@ -1,7 +1,7 @@
 import { BiLogoLinkedinSquare } from "react-icons/bi";
 const Footer = () => {
   return (
-    <div className="bg-gray-800 text-white py-4">
+    <div className="bg-gray-800 text-white px-2 py-4 ">
       <div className="container mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-4">
         <div className="md:w-1/4">
           <h3 className="text-lg font-bold mb-2">Servicios</h3>
