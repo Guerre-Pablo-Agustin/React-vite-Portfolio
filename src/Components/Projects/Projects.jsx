@@ -10,6 +10,8 @@ import henrucci from "./img/henrucci.png";
 import paises from "./img/paises.png";
 import propiedades from "./img/propiedades.png";
 import dashboard from "./img/dashboard.jpg";
+import easybank from "./img/easybank.png";
+import socialbutton from "./img/socialbutton.png";
 import { useState } from "react";
 
 const projects = [
@@ -17,7 +19,7 @@ const projects = [
     name: "Pokedex",
     image: pokedex,
     description: "Proyecto Pokedex creado con la API de PokeApi",
-    tecnologias:["HTML", "CSS", "JavaScript"],
+    tecnologias: ["HTML", "CSS", "JavaScript"],
     githubLink: "https://github.com/Guerre-Pablo-Agustin/Pokedex",
     liveLink: "https://app-pokedex-gap.netlify.app",
   },
@@ -25,15 +27,24 @@ const projects = [
     name: "Clima App",
     image: clima,
     description: "Proyecto Clima creado con la API de OpenWeather",
-    tecnologias:["HTML", "CSS", "JavaScript"],
+    tecnologias: ["HTML", "CSS", "JavaScript"],
     githubLink: "https://github.com/Guerre-Pablo-Agustin/Clima",
     liveLink: "https://app-clima-gpa.netlify.app",
   },
   {
     name: "Henrucci tienda",
     image: henrucci,
-    description: "Ecommerce de ropa creado con Next.js, tailwind css, pasarela de pago paypal",
-    tecnologias:["Next.js", "Tailwindcss", "Paypal", "Javascript", "Node.js", "Express", "MongoDB"],
+    description:
+      "Ecommerce de ropa creado con Next.js, tailwind css, pasarela de pago paypal",
+    tecnologias: [
+      "Next.js",
+      "Tailwindcss",
+      "Paypal",
+      "Javascript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+    ],
     githubLink: "https://github.com/Guerre-Pablo-Agustin/Clima",
     liveLink: "https://pf-henry-15a-ecommerce-frontend.vercel.app",
   },
@@ -41,25 +52,41 @@ const projects = [
     name: "App de Paises",
     image: paises,
     description: "Proyecto Paises creado con Vite, node, express y postgres",
-    tecnologias:["Vite", "Node", "Express", "PostgreSQL"],
+    tecnologias: ["Vite", "Node", "Express", "PostgreSQL"],
     githubLink: "https://github.com/Guerre-Pablo-Agustin/cr-pi-countries-main",
     liveLink: "https://countries-project-iota.vercel.app",
   },
   {
-    name:"App de propiedades",
-    image:propiedades,
-    description:"Proyecto para venta y alquiler de propiedades",
-    tecnologias:["Next.js", "Tailwindcss", "Javascript", "Framer Motion"],
-    githubLink:"https://github.com/Guerre-Pablo-Agustin/App-Properties",
-    liveLink:"https://propiedades-app.netlify.app",
+    name: "App de propiedades",
+    image: propiedades,
+    description: "Proyecto para venta y alquiler de propiedades",
+    tecnologias: ["Next.js", "Tailwindcss", "Javascript", "Framer Motion"],
+    githubLink: "https://github.com/Guerre-Pablo-Agustin/App-Properties",
+    liveLink: "https://propiedades-app.netlify.app",
   },
   {
-    name:"Dashboard",
-    image:dashboard,
-    description:"Proyecto dashboard creado para manejo de clientes y gastos",
-    tecnologias:["Next.js", "Tailwindcss", "Javascript", "PostgreSQL"],
-    githubLink:"https://github.com/Guerre-Pablo-Agustin/next-dashboard",
-    liveLink:"https://dashboard-next14-coral.vercel.app/dashboard",
+    name: "Dashboard",
+    image: dashboard,
+    description: "Proyecto dashboard creado para manejo de clientes y gastos",
+    tecnologias: ["Next.js", "Tailwindcss", "Javascript", "PostgreSQL"],
+    githubLink: "https://github.com/Guerre-Pablo-Agustin/next-dashboard",
+    liveLink: "https://dashboard-next14-coral.vercel.app/dashboard",
+  },
+  {
+    name: "easybank landing page",
+    image: easybank,
+    description: "Proyecto landing page creado con Next.js",
+    tecnologias: ["Next.js", "Tailwindcss", "Typescript"],
+    githubLink: "https://github.com/Guerre-Pablo-Agustin/easybank-landing",
+    liveLink: "https://landingpagebank.netlify.app",
+  },
+  {
+    name: "Social Button",
+    image: socialbutton,
+    description: "Proyecto landing page creado con Next.js",
+    tecnologias: ["Next.js", "Tailwindcss", "Typescript"],
+    githubLink: "https://github.com/Guerre-Pablo-Agustin/social-profile",
+    liveLink: "https://socials-buttons.netlify.app",
   }
 ];
 
@@ -130,26 +157,33 @@ const Projects = () => {
                       </p>
                     ))}
                   </div>
-                  <div className="flex gap-4">
+                  <div className="flex gap-4 relative group">
                     <div className="flex">
                       <a
                         href={project.githubLink}
                         target="_blank"
                         className="bg-primary px-5 py-3 rounded-md text-white mt-2 flex gap-2 shadow-md shadow-primary hover:scale-110 transition-all duration-100 "
                         rel="noreferrer"
+                        title="Repositorio"
                       >
                         <AiFillGithub className="text-3xl" />
                       </a>
+                      <span className="absolute bottom-full mb-2 right-1/4 transform -translate-x-1/2 px-2 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                        Repositorio
+                      </span>
                     </div>
-                    <div className="flex">
+                    <div className="flex relative group">
                       <a
                         href={project.liveLink}
                         target="_blank"
-                        className="bg-secondary px-5 py-3 rounded-md text-white mt-2 flex gap-2 shadow-md shadow-secondary hover:scale-110 transition-all duration-100 "
+                        className="bg-secondary px-5 py-3 rounded-md text-white mt-2 flex gap-2 shadow-md shadow-secondary hover:scale-110 transition-all duration-100"
                         rel="noreferrer"
                       >
                         <AiOutlineLink className="text-3xl" />
                       </a>
+                      <span className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 px-2 py-1 bg-gray-800 text-white text-sm rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+                        Sitio web
+                      </span>
                     </div>
                   </div>
                 </div>
