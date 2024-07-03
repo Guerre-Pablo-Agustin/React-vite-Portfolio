@@ -48,7 +48,7 @@ const Skills = () => {
         <div className="  flex items-center justify-center ms:w-full ">
           <img
             src={imagen}
-            className=" min-[400px]:w[80%]  min-[1300px]:ml-10"
+            className=" min-[400px]:w[50%]  min-[1300px]:ml-10"
             alt="imagen"
           />
         </div>

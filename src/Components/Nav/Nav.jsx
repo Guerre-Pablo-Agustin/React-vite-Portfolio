@@ -1,6 +1,5 @@
-//react
 import { useState } from "react";
-//Icons
+// Icons
 import {
   RiCheckboxBlankCircleFill,
   RiMenu3Fill,
@@ -10,6 +9,7 @@ import {
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
+    
     <header className="italic flex items-center w-full p-6 h-[10vh] justify-between xl:justify-start">
       <div className="hl:w-1/6 text-center">
         <span className="font-bold text-4xl relative p-1 bg-white">
@@ -18,19 +18,17 @@ const Nav = () => {
         </span>
       </div>
       <nav
-        className={`fixed italic w-[80%] md:w-[60%] xl:w-full h-full font-bold ${
+        className={`fixed italic w-[80%] md:w-[60%] xl:w-auto h-full xl:h-auto bg-primary xl:bg-transparent font-bold ${
           showMenu ? "left-0" : "-left-full"
-        } top-0 xl:static
-         flex-1 flex flex-col xl:flex-row items-center justify-center gap-10
-         transition-all duration-500 z-50 max-[900px]:bg-primary max-[900px]:text-xl`}
+        } top-0 xl:static flex-1 flex flex-col xl:flex-row items-center justify-center gap-10 transition-all duration-500 z-50 xl:z-auto xl:gap-6`}
       >
-        <a className="hover:text-primary hover:underline hover:text-xl" href="#Home">Home</a>
-        <a className="hover:text-primary hover:underline hover:text-xl" href="#about">About</a>
-        <a className="hover:text-primary hover:underline hover:text-xl"  href="#skills">Skills</a>
-        <a className="hover:text-primary hover:underline hover:text-xl" href="#projects">Projects</a>
-        <a className="hover:text-primary hover:underline hover:text-xl" href="#contacto">Contact</a>
+        <a className="hover:text-primary hover:underline xl:no-underline" href="#Home">Home</a>
+        <a className="hover:text-primary hover:underline xl:no-underline" href="#about">About</a>
+        <a className="hover:text-primary hover:underline xl:no-underline" href="#skills">Skills</a>
+        <a className="hover:text-primary hover:underline xl:no-underline" href="#projects">Projects</a>
+        <a className="hover:text-primary hover:underline xl:no-underline" href="#contacto">Contact</a>
         <button onClick={() => setShowMenu(!showMenu)} className="xl:hidden text-4xl">
-        {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
+          {showMenu ? <RiCloseLine /> : <RiMenu3Fill />}
         </button>
       </nav>
       <button
