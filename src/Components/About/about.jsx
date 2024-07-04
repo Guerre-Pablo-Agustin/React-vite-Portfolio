@@ -4,15 +4,25 @@ import analista from "./img/analista.png";
 import diseñador from "./img/diseñador.png";
 import programador from "./img/programador.jpg";
 
+
+import { motion } from "framer-motion";
+
+import { fadeIn } from "../../variants";
+
 const About = () => {
   return (
-    <section id="about" className="min-h-[90vh] grid grid-cols-1 md:-mt-20 max-[900px]:grid-cols-1">
+    <motion.section 
+    variants={fadeIn("down", 0.5)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{once: false, amount: 0.3}}
+    id="about" className="h-screen grid grid-cols-1 md:-mt-20 max-[900px]:grid-cols-1">
       {/*Informacion sobre mi*/}
-      <div className="bg-primary flex justify-center items-center mt-2">
+      <div className="flex justify-center items-center mt-2">
       <h1 className="italic sm-[600px]:mt-10  text-5xl mt-10  p-2 rounded-md text-white font-bold">Sobre mi</h1>
      </div>
 
-     <div className="bg-primary grid italic grid-cols-1 md:grid-cols-3  gap-4 p-10 
+     <div className="bg-tertiary grid italic grid-cols-1 md:grid-cols-3  gap-4 p-10 
                      max-[900px]:p-4 max-[900px]:grid-cols-1">
       {/*Analista*/}
       <div className="cursor-pointer md:col-span-1 bg-white max-w-2xl 
@@ -20,7 +30,7 @@ const About = () => {
                       min-[1300px]:hover:scale-110 transition-all duration-500
                       max-[600px]:m-2">
         <div className="flex items-center justify-center mb-4">
-          <span className="bg-primary text-white py-2 px-4 text-lg rounded uppercase">
+          <span className=" text-white py-2 px-4 text-lg rounded uppercase">
             Analista
           </span>
         </div>
@@ -94,7 +104,7 @@ const About = () => {
         </div>
       </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

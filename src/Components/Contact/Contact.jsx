@@ -5,6 +5,10 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { BiLogoLinkedinSquare } from "react-icons/bi";
 import formulario from "./img/form.png";
 import { Toaster, toast } from "react-hot-toast";
+//motion
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
+
 
 const Contacto = () => {
   const form = useRef();
@@ -60,11 +64,21 @@ const Contacto = () => {
   };
 
   return (
-    <section id="contacto" className="mx-auto grid grid-cols-1 md:grid-cols-2 ">
+    <motion.section 
+    variants={fadeIn("up", 0.5)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{once: false, amount: 0.3}}
+    id="contacto" className="bg-tertiary h-screen mt-10 mx-auto grid grid-cols-1 md:grid-cols-2 ">
       <Toaster position="bottom-left" />
 
       {/* Imagen */}
-      <div className=" md:col-span-1 max-[600px]:m-5 ">
+      <motion.div 
+       variants={fadeIn("right", 0.5)}
+       initial="hidden"
+       whileInView={"show"}
+       viewport={{once: false, amount: 0.3}}
+      className=" md:col-span-1 max-[600px]:m-5 ">
         <h1 className="m-auto italic w-[50%] rounded-md text-2xl font-bold mt-4 mb-5 flex items-center justify-center text-center bg-primary text-white p-2 shadow-sm shadow-gray-400 ">
           Formulario de Contacto
         </h1>
@@ -75,10 +89,15 @@ const Contacto = () => {
             alt="fomrulario"
           />
         </div>
-      </div>
+      </motion.div>
 
       {/* Formulario */}
-      <div className="md:col-span-1 m-8">
+      <motion.div 
+       variants={fadeIn("left", 0.5)}
+       initial="hidden"
+       whileInView={"show"}
+       viewport={{once: false, amount: 0.3}}
+      className="md:col-span-1 m-8">
         <div className="px-4 py-8 flex flex-col md:flex-row md:items-center md:justify-center gap-8">
           <form ref={form} onSubmit={enviarCorreo} className="space-y-4 w-full">
             <div className="flex w-full relative">
@@ -93,7 +112,7 @@ const Contacto = () => {
               />
               <label
                 htmlFor="nombre"
-                className="absolute top-1/2 -translate-y-1/2 left-3 peer-focus:top-0 peer-focus:text-xs peer-focus:font-semibold transition-all bg-white px-2 cursor-text peer-valid:top-0 peer-valid:text-xs peer-valid:font-semibold text-gray-500 flex items-center gap-2"
+                className="absolute top-1/2 -translate-y-1/2 left-3 peer-focus:top-0 peer-focus:text-xs peer-focus:font-semibold transition-all  px-2 cursor-text peer-valid:top-0 peer-valid:text-xs peer-valid:font-semibold bg-tertiary text-white flex items-center gap-2"
               >
                 Nombre(s) <span className="text-red-500">*</span>
               </label>
@@ -111,7 +130,7 @@ const Contacto = () => {
               />
               <label
                 htmlFor="email"
-                className="absolute top-1/2 -translate-y-1/2 left-3 peer-focus:top-0 peer-focus:text-xs peer-focus:font-semibold transition-all bg-white px-2 cursor-text peer-valid:top-0 peer-valid:text-xs peer-valid:font-semibold text-gray-500 flex items-center gap-2"
+                className="absolute top-1/2 -translate-y-1/2 left-3 peer-focus:top-0 peer-focus:text-xs peer-focus:font-semibold transition-all bg-tertiary text-white px-2 cursor-text peer-valid:top-0 peer-valid:text-xs peer-valid:font-semibold flex items-center gap-2"
               >
                 Correo <span className="text-red-500">*</span>
               </label>
@@ -129,7 +148,7 @@ const Contacto = () => {
               ></textarea>
               <label
                 htmlFor="message"
-                className="absolute top-1/2 -translate-y-1/2 left-3 peer-focus:top-0 peer-focus:text-xs peer-focus:font-semibold transition-all bg-white px-2 cursor-text peer-valid:top-0 peer-valid:text-xs peer-valid:font-semibold text-gray-500 flex items-center gap-2"
+                className="absolute top-1/2 -translate-y-1/2 left-3 peer-focus:top-0 peer-focus:text-xs peer-focus:font-semibold transition-all bg-tertiary text-white px-2 cursor-text peer-valid:top-0 peer-valid:text-xs peer-valid:font-semibold  flex items-center gap-2"
               >
                 Mensaje <span className="text-red-500">*</span>
               </label>
@@ -146,7 +165,7 @@ const Contacto = () => {
 
         {/* Otros contactos */}
         <div>
-          <h2 className="text-2xl font-bold m-8">Otros medios de contacto:</h2>
+          <h2 className="text-2xl text-white font-bold m-8">Otros medios de contacto:</h2>
           <div className="flex gap-4 -mt-14">
             <div className="mt-10 flex">
               <a
@@ -182,8 +201,8 @@ const Contacto = () => {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

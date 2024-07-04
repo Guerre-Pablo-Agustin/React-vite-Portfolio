@@ -5,19 +5,25 @@ import { AiFillGithub } from "react-icons/ai";
 import { FaFileAlt } from "react-icons/fa";
 //img
 import imagen from "./img/Hero-img.png";
+import { fadeIn } from "../../variants";
 
 const Hero = () => {
   return (
     <motion.section
       id="Home"
+      variants={fadeIn("up", 0.5)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{once: false, amount: 0.3}}
       className="w-full h-[90vh] flex justify-center  items-center md:flex-row flex-col-reverse  mb-20 mt-80 md:mt-10 g-2  "
-      initial={{ opacity: 0, y: 200 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-     
     >
       {/* Informacion */}
-      <div className="flex flex-col justify-center p-4 w-[100%] md:w-[40%] mb-40">
+      <motion.div 
+       variants={fadeIn("right", 0.5)}
+       initial="hidden"
+       whileInView={"show"}
+       viewport={{once: false, amount: 0.3}}
+      className="flex flex-col justify-center p-4 w-[100%] md:w-[40%] mb-40">
         <div className="flex flex-col  md:py-20  w-full h-screen my-8">
           <div className="flex flex-col m-auto items-center justify-center ">
             <h1 className=" text-wrap text-5xl md:text-7xl font-bold italic text-center py-5 flex items-center justify-center flex-col">
@@ -26,7 +32,7 @@ const Hero = () => {
                 Programador
               </span>
             </h1>
-            <p className="text-wrap  mt-2 text-lg italic flex text-justify h-[230px] w-[375px] px-10">
+            <p className="text-left  text-white mt-2 text-lg italic flex  h-[230px] w-[375px] px-10">
               Técnico Superior en Programación y Análisis de Sistemas con buenas
               habilidades para la resolución de problemas, capaz de desempeñarse
               bien en un equipo. Apasionado por la codificación y poniendo
@@ -53,15 +59,20 @@ const Hero = () => {
             </a>
           </div>
         </div>
-      </div>
+      </motion.div>
       {/* Imagen */}
-      <div className="flex h-screen items-center justify-center w-[60%] max-[800px]:w-[90%] ">
+      <motion.div 
+       variants={fadeIn("left", 0.5)}
+       initial="hidden"
+       whileInView={"show"}
+       viewport={{once: false, amount: 0.3}}
+      className="flex h-screen items-center justify-center w-[60%] max-[800px]:w-[90%] ">
         <img
           src={imagen}
           className="w-full h-auto min-[700px] max-[600px] max-[800px]:-mb-10 max-[800px]:w-[800px] max-[800px]:h-[400px] max-[800px]:mx-auto mb-auto"
           alt="imagen"
         />
-      </div>
+      </motion.div>
     </motion.section>
   );
 };

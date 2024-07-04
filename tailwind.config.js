@@ -9,6 +9,7 @@ export default {
       colors:{
         'primary': '#07beb8',
         'secondary': '#0a58ca',
+        'tertiary': '#132f34',
         "hover": "#66d9e8"
       },
       textshadow:{

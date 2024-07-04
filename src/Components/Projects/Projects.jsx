@@ -13,6 +13,10 @@ import dashboard from "./img/dashboard.jpg";
 import easybank from "./img/easybank.png";
 import socialbutton from "./img/socialbutton.png";
 import { useState } from "react";
+//notion
+import {motion} from "framer-motion"
+//variants
+import { fadeIn } from "../../variants";
 
 const projects = [
   {
@@ -94,13 +98,19 @@ const Projects = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
 
   return (
-    <div id="projects" className="min-h-[90vh] grid grid-cols-1">
-      <div className="bg-primary flex justify-center items-center mt-2">
+    <motion.div 
+    variants={fadeIn("down", 0.5)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{once: false, amount: 0.3}}
+    id="projects" 
+    className="h-screen grid grid-cols-1 bg-tertiary">
+      <div className=" flex justify-center items-center mt-2">
         <h1 className=" p-2 rounded-md text-white font-bold italic max-[600px]:mt-10 text-5xl mt-10">
           Mis proyectos
         </h1>
       </div>
-      <div className="bg-primary flex items-center justify-center flex-col">
+      <div className="flex items-center justify-center flex-col">
         <Swiper
           breakpoints={{
             340: {
@@ -197,7 +207,7 @@ const Projects = () => {
           ))}
         </Swiper>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
