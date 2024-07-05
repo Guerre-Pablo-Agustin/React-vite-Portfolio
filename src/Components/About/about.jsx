@@ -30,7 +30,7 @@ const About = () => {
                       min-[1300px]:hover:scale-110 transition-all duration-500
                       max-[600px]:m-2">
         <div className="flex items-center justify-center mb-4">
-          <span className=" text-white py-2 px-4 text-lg rounded uppercase">
+          <span className="bg-primary text-white py-2 px-4 text-lg rounded uppercase">
             Analista
           </span>
         </div>
